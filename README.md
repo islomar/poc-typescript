@@ -13,6 +13,11 @@ Playground for learning about TypeScript
 
 
 ## General
+- Developed by Microsoft
+- Open-source: Apache License 2.0
+- **First version: October 2012**
+- Current version: [5.4.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)
+    - [TypeScript 5.5 Iteration Plan](https://github.com/microsoft/TypeScript/issues/57475)
 - https://github.com/microsoft/TypeScript
     - [Good first issue](https://github.com/Microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+label%3A%22Good+First+Issue%22)
 - [Playground for TS](https://www.typescriptlang.org/play/)
@@ -21,11 +26,6 @@ Playground for learning about TypeScript
 - https://stateofjs.com/en-US
 - https://en.wikipedia.org/wiki/TypeScript
 - https://code.visualstudio.com/docs/typescript/typescript-tutorial
-- Developed by Microsoft
-- Open-source: Apache License 2.0
-- **First version: October 2012**
-- Current version: [5.4.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)
-    - [TypeScript 5.5 Iteration Plan](https://github.com/microsoft/TypeScript/issues/57475)
 - TypeScript is a strongly typed programming language that builds on JavaScript
 - TypeScript is a **strict superset of ECMAScript 2015**, which is itself a superset of ECMAScript 5, commonly referred to as JavaScript.
 - The TypeScript compiler is itself written in TypeScript and compiled to JavaScript
@@ -105,7 +105,29 @@ Playground for learning about TypeScript
 - **Express API**
     - [Code example](https://github.com/CodelyTV/typescript-api-skeleton/blob/main/package.json#L8)
     - Deno directly works with TypeScript
-
+- **Interfaces vs types**
+    - https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces
+        -  If you would like a heuristic, use `interface` until you need to use features from `type`.
+        - A `type` cannot be re-opened to add new properties vs an `interface` which is always extendable.
+    - [Code example](https://github.com/CodelyTV/refactor-from-js-to-ts-course/tree/main/81-types-vs-interfaces)
+    - [interface vs type](https://pro.codely.tv/library/de-javascript-a-typescript-128106/347481/community/discussion/1788249/)
+    - [Official documentation for Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+    - [The Difference Between Type Aliases and Interfaces in TypeScript](https://blog.bitsrc.io/the-difference-between-type-aliases-and-interfaces-in-typescript-af5f34fe4309)
+        - Type aliases are used to create new names for existing types, whereas interfaces are used to define the shape and behavior of an object.
+    - [Playground example: Types vs Interfaces](https://www.typescriptlang.org/play/typescript/language-extensions/types-vs-interfaces.ts.html)
+        - **We recommend you use interfaces over type aliases**. Specifically, because you will get better error messages
+    - Both `implements` and `extends` can be done with both `types` and  `interfaces`
+    - Things that can only be done with `types`, not with `interfaces`:
+        - **Unions** 
+        - Typing a Tuple
+        - Typing a primitive
+    - Things that can only be done with `interfaces`, not with `types`:
+        - Declaration merging
+    - Neither Interfaces nor Types exist when transpiling
+        - The do not exist on runtime.
+        - [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is a way to hack some things.
+- **Experiences moving to TS**
+    - https://dev.to/pincfloit/game-development-diary-v-moving-to-typescript-5a4k
 
     
 ## TypeScript for JS programmers
@@ -133,3 +155,7 @@ Playground for learning about TypeScript
 
 ## Interesting links
 - [TSyringe: dependency injection](https://adrianferrera.dev/es/blog/tsyringe)
+- [InversifyJS](https://github.com/inversify/InversifyJS): A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.
+    - It uses constants to "hack" de fact that interfaces and types disappear after transpiling.
+- [DIOD: Dependency Injection On Demand](https://github.com/artberri/diod): A very opinionated and lightweight (under 2kB minified and gzipped) inversion of control container and dependency injector for Node.js or browser apps.
+    - It uses abstract classes to "hack" de fact that interfaces and types disappear after transpiling.
