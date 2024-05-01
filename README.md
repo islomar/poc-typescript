@@ -128,6 +128,12 @@ Playground for learning about TypeScript
         - [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is a way to hack some things.
 - **Experiences moving to TS**
     - https://dev.to/pincfloit/game-development-diary-v-moving-to-typescript-5a4k
+    - Genially
+        - Monorepo
+        - Express with Responsibility Chain
+        - ErrorHandlerMiddleware (catch exceptions - Domain, etc. - and return the corresponding HTTP Status codes, mesages, etc.)
+        - Use of Sentry
+        - Decorators in the Controllers, e.g. @Authorized() or @HttpCode(200)
 
     
 ## TypeScript for JS programmers
