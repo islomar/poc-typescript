@@ -165,3 +165,4 @@ Playground for learning about TypeScript
     - It uses constants to "hack" de fact that interfaces and types disappear after transpiling.
 - [DIOD: Dependency Injection On Demand](https://github.com/artberri/diod): A very opinionated and lightweight (under 2kB minified and gzipped) inversion of control container and dependency injector for Node.js or browser apps.
     - It uses abstract classes to "hack" de fact that interfaces and types disappear after transpiling.
+- [Branded Types in TypeScript](https://egghead.io/blog/using-branded-types-in-typescript)
