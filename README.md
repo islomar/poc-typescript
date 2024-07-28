@@ -89,7 +89,7 @@ Playground for learning about TypeScript
 - **Testing and TypeScript**
     - [Code example](https://github.com/CodelyTV/refactor-from-js-to-ts-course/tree/main/53-testing-lib-types)
     - [ts-jest](https://github.com/kulshekhar/ts-jest)
-    - For testin HTTP APIs: https://www.npmjs.com/package/supertest
+    - For testing HTTP APIs: https://www.npmjs.com/package/supertest
     - Cypress:
         - It requires an extension to `tsconfig.json`
         - [Code example](https://github.com/CodelyTV/refactor-from-js-to-ts-course/tree/main/53-testing-lib-types)
@@ -155,8 +155,11 @@ Playground for learning about TypeScript
 - https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html
 
 
-## Already read
-- TBD
+## How to migrate a project from JS to TS
+- https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
+- https://pro.codely.com/library/de-javascript-a-typescript-128106/347481/path/step/131062671/
+- https://github.com/CodelyTV/refactor-from-js-to-ts-course/tree/main/21-supporting-typescript
+- https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node
 
 
 ## Interesting links
