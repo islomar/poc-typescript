@@ -110,6 +110,8 @@ Playground for learning about TypeScript
         -  If you would like a heuristic, use `interface` until you need to use features from `type`.
         - A `type` cannot be re-opened to add new properties vs an `interface` which is always extendable.
     - [Code example](https://github.com/CodelyTV/refactor-from-js-to-ts-course/tree/main/81-types-vs-interfaces)
+    - [Types vs Interfaces: What I Got Wrong In 2022](https://www.youtube.com/watch?v=e0AIkYrXAYE), 10 min. video
+    - [Type vs Interface: Which Should You Use?](https://www.totaltypescript.com/type-vs-interface-which-should-you-use)
     - [interface vs type](https://pro.codely.tv/library/de-javascript-a-typescript-128106/347481/community/discussion/1788249/)
     - [Official documentation for Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
     - [The Difference Between Type Aliases and Interfaces in TypeScript](https://blog.bitsrc.io/the-difference-between-type-aliases-and-interfaces-in-typescript-af5f34fe4309)
@@ -122,7 +124,8 @@ Playground for learning about TypeScript
         - Typing a Tuple
         - Typing a primitive
     - Things that can only be done with `interfaces`, not with `types`:
-        - Declaration merging
+        - [Declaration merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)
+            - Use typescript-eslint `no-unsafe-declaration-merging"
     - Neither Interfaces nor Types exist when transpiling
         - The do not exist on runtime.
         - [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is a way to hack some things.
